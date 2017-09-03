@@ -17,8 +17,8 @@ public class BaseDao {
 	
 	public static Connection getConn() throws SQLException{
 		String url="jdbc:oracle:thin:@192.168.10.100:1521:orcl";
-		String user="wangfan";
-		String password="wangfan";
+		String user="";
+		String password="";
 		return DriverManager.getConnection(url, user, password);
 	}
 	public static void main(String[] args) throws SQLException {
